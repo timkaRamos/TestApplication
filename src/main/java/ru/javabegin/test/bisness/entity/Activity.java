@@ -22,6 +22,7 @@ public class Activity {
     @Column(name = "user_id",nullable = false)
     private  Long userId;
     @Basic
+    @ManyToOne
     @JoinColumn(name = "user_id",referencedColumnName = "id",nullable = false)
     private UserData userDataByUserId;
 
